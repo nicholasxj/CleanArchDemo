@@ -1,5 +1,5 @@
-﻿using CleanArch.Domain.Models;
-using CleanArch.Domain.Models.Interfaces;
+﻿using CleanArch.Domain.Interfaces;
+using CleanArch.Domain.Models;
 using CleanArch.Infrastructure.Data.Context;
 using System;
 using System.Collections.Generic;
@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CleanArch.Infrastructure.Data.Repository
 {
-	public class CourseRepository : ICourseRepository
+    public class CourseRepository : ICourseRepository
 	{
 		private readonly UniversityDbContext _context;
 
