@@ -1,6 +1,6 @@
 ﻿using CleanArch.Application.Interfaces;
 using CleanArch.Application.ViewModels;
-using CleanArch.Domain.Models.Interfaces;
+using CleanArch.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CleanArch.Application.Services
 {
-	public class CourseService : ICourseService
+    public class CourseService : ICourseService
 	{
 		private readonly ICourseRepository _courseRepository;
 
