@@ -1,4 +1,9 @@
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace CleanArch.Api.Controllers
 {
@@ -12,7 +17,5 @@ namespace CleanArch.Api.Controllers
         {
             _logger = logger;
         }
-
-        
     }
 }
