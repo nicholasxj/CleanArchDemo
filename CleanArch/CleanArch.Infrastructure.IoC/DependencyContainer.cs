@@ -9,6 +9,7 @@ using CleanArch.Infrastructure.Data.Context;
 using CleanArch.Infrastructure.Data.Repository;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +22,8 @@ namespace CleanArch.Infrastructure.IoC
 	{
 		public static void RegisterServices(IServiceCollection services)
 		{
+			//services.AddSingleton<ILogger<CourseController>>();
+
 			// Domain InMemoryBus MediatR
 			services.AddScoped<IMediatorHandler, InMemoryBus>();
 
