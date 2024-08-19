@@ -43,7 +43,10 @@ namespace CleanArch.MVC
 				options.UseSqlServer(Configuration.GetConnectionString("UniversityDbConnection"));
 			});
 
-			RegisterServices(services);
+			services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<Program>());
+
+
+            RegisterServices(services);
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
